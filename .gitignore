@@ -1,2 +1,15 @@
+# Mercurial files
 .hg/
 .hg*
+
+# Debian packaging artifacts
+build/
+debian/ceed.debhelper.log
+debian/ceed.postinst.debhelper
+debian/ceed.prerm.debhelper
+debian/ceed.substvars
+debian/ceed/
+debian/files
+doc/developer-manual.pdf
+doc/quickstart-guide.pdf
+doc/user-manual.pdf
