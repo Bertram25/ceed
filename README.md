@@ -32,6 +32,20 @@ You need an OpenGL capable GPU with **FBO** support. CEED will run without that 
 
 CEED was tested on Linux, MacOS X, Windows and FreeBSD. It may or may not run on other systems.
 
+### Package CEED for Debian
+You'll first need to the following Debian package dependencies:
+```bash
+debhelper (>= 6), cdbs, libtool, libcegui-mk2-0.8.4,
+pyside-tools, python, python-opengl, libboost-python-dev,
+python-pyside, lyx
+```
+
+Once you have cloned the repository, you can package CEED using the following command:
+
+```bash
+debuild -b -uc -us
+```
+
 ### Starting CEED
 
 #### system-wide install (Linux or MacOS X)
