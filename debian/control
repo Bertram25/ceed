@@ -1,0 +1,24 @@
+Source: ceed-0.8.0
+Section: graphics
+Priority: optional
+Maintainer: Yohann Ferreira <yohann.ferreira@orange.fr>
+Build-Depends: debhelper (>= 6), cdbs, libtool, libcegui-mk2-0.8.4,
+               pyside-tools, python, python-opengl, libboost-python-dev,
+               python-pyside, lyx
+X-Python-Version: >= 2.7
+Standards-Version: 3.9.6
+Homepage: http://www.cegui.org.uk/
+VCS-Browser: https://bitbucket.org/cegui/ceed/src
+VCS-Hg: ssh://hg@bitbucket.org/cegui/ceed
+
+Package: ceed
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Crazy Eddie's GUI Unified Editor
+ CEED is the GUI Editor made to develop quickly UI files for CEGUI.
+ CEGUI is a free library providing windowing and widgets for graphics
+ APIs and engines where such functionality is not natively available
+ or is severely lacking. The library is written in C++, is object
+ oriented, and is primarily targeted at games developers who should be
+ spending their time creating great games, not building GUI sub-systems
+ .

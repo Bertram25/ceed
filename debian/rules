@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+#DH_VERBOSE = 1
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/default.mk
+
+# Default Python2 build
+%:
+	dh $@ --with python2
+# Prebuild the documentation
+override_dh_auto_configure:
+	lyx --export-to pdf doc/quickstart-guide.pdf doc/quickstart-guide-src/quickstart-guide.lyx
+	lyx --export-to pdf doc/user-manual.pdf doc/user-manual-src/user-manual.lyx
+	lyx --export-to pdf doc/developer-manual.pdf doc/developer-manual-src/developer-manual.lyx
+
